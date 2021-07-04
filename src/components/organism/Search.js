@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components';
 
 const Searchb = styled.div`
   display: block;
@@ -8,7 +8,7 @@ const Searchb = styled.div`
   color: rgb(66, 66, 66);
   font-size: 2.33333rem;
   font-weight: bold;
-  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 `
 

@@ -1,6 +1,6 @@
-import React from "react"
-import {TemplateClassicPage} from "../templates/TemplateClassicPage";
-import {EditForm} from "../organism/EditForm";
+import React from 'react'
+import {TemplateClassicPage} from '../templates/TemplateClassicPage';
+import {EditForm} from '../organism/EditForm';
 
 
 export const EditAnnounce = () => {
@@ -8,7 +8,6 @@ export const EditAnnounce = () => {
         <div>
             <TemplateClassicPage/>
             <EditForm/>
-            EditAnnounce
         </div>
     )
 }

@@ -2,28 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f811e6d-ce0e-4d05-8307-f401742f2e29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Announce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/LongList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/ShortList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/WatchAllBtn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/AddForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/EditForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/RecentUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/AddNewAnnouncement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/AllAnnouncement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/EditAnnounce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/ResaultOfSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/templates/TemplateClassicPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/AppReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/GlobalState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Announce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Announce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/LongList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/LongList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/ShortList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/ShortList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/WatchAllBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/WatchAllBtn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/AddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/AddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/EditForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/EditForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/RecentUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/RecentUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/AddNewAnnouncement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/AddNewAnnouncement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/AllAnnouncement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/AllAnnouncement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/EditAnnounce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/EditAnnounce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResaultOfSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResaultOfSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/TemplateClassicPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/TemplateClassicPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AppReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AppReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/GlobalState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/GlobalState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,7 @@
       <workItem from="1625142766274" duration="1619000" />
       <workItem from="1625144626079" duration="6800000" />
       <workItem from="1625199683509" duration="27068000" />
-      <workItem from="1625282632546" duration="23022000" />
+      <workItem from="1625282632546" duration="25594000" />
     </task>
     <servers />
   </component>

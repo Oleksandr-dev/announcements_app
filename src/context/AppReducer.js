@@ -13,7 +13,7 @@ export default (state, action) => {
         case 'EDIT_ANNOUNCE':
             return {
                 ...state,
-                announces: state.announces.map(announce => {if(announce.id == action.payload.id){
+                announces: state.announces.map(announce => {if(announce.id === action.payload.id){
                     announce.title = action.payload.title
                     announce.text = action.payload.text
                     announce.date = action.payload.date

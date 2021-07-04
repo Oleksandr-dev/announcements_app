@@ -1,10 +1,8 @@
-import React, {useContext, useState} from "react"
-import {GlobalContext} from "../../context/GlobalState";
-import {uuid} from "uuidv4";
-import styled from "styled-components";
-import {ShortList} from "../molecules/ShortList";
-import {WatchAllBtn} from "../molecules/WatchAllBtn";
-import {Link} from "react-router-dom";
+import React, {useContext, useState} from 'react'
+import {GlobalContext} from '../../context/GlobalState';
+import {uuid} from 'uuidv4';
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const AddNewAnSt = styled.form`
   background-color: #15172b;
@@ -77,42 +75,21 @@ export const AddForm = () => {
     return (
         <div>
             <AddNewAnSt onSubmit={onSubmit}>
-            <InpCtSt className="form-control">
-                <Placeholder htmlFor="title">Title</Placeholder>
-                <InpSt type="title" value={title} onChange={(e) => setTitle(e.target.value)}
-                       placeholder=" "/*"Title"*//>
-                <Cut className="cut"></Cut>
+            <InpCtSt className='form-control'>
+                <Placeholder htmlFor='title'>Title</Placeholder>
+                <InpSt type='title' value={title} onChange={(e) => setTitle(e.target.value)}
+                       placeholder=' ' />
+                <Cut className='cut'></Cut>
             </InpCtSt>
 
-            <InpCtSt className="form-control">
-                <Placeholder htmlFor="text">Text</Placeholder>
-                <InpSt type="text" value={text} onChange={(e) => setText(e.target.value)}
-                       placeholder=" "/*"Text"*//>
+            <InpCtSt className='form-control'>
+                <Placeholder htmlFor='text'>Text</Placeholder>
+                <InpSt type='text' value={text} onChange={(e) => setText(e.target.value)}
+                       placeholder=' ' />
             </InpCtSt>
-                <button className="btn">Add transaction</button>
-           {/* <div>
-                enter theme
-                <div>
-                <textarea ref={newMessageElement}
-                          value={props.dialogsData.newMessageText}
-                          onChange={onMessageChange}/>
-                </div>
-            </div>
-            <div>
-                enter text
-                <div>
-
-                <textarea ref={newMessageElement}
-                          value={props.dialogsData.newMessageText}
-                          onChange={onMessageChange}/>
-                </div>
-                <div>
-                    <button onClick={sendMessage}>Send message</button>
-
-                </div>
-            </div>*/}
+                <button className='btn'>Add transaction</button>
             </AddNewAnSt>
-            <Link to={"/"}>
+            <Link to={'/'}>
                 <button>back</button>
             </Link>
         </div>
@@ -143,13 +120,3 @@ const Cut = styled.div`
     transition: transform 200ms, color 200ms;
     top: 20px;
 `
-/*
-const onMessageChange = () => {
-    let text = newMessageElement.current.value
-    const action = {
-        type: 'CHANGE-NEW-MESSAGE-TEXT',
-        newText: text,
-    }
-    props.dispatch(action)
-    console.log(text)
-}*/

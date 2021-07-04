@@ -4,7 +4,7 @@ import AppReducer from './AppReducer';
 // Initial state
 const initialState = {
     announces: [
-        {id:1, title: "test task", text: "this is test task", date: 1625235894394}
+        {id:'1', title: 'test task', text: 'this is test task', date: 1625235894394}
     ]
 }
 

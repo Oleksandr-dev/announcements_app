@@ -1,9 +1,6 @@
-import React, {useContext} from "react"
-import {GlobalContext} from "../../context/GlobalState";
-import {Link} from "react-router-dom";
-import styled from "styled-components";
-import {Announce} from "../atoms/Announce";
-
+import React, {useContext} from 'react'
+import {GlobalContext} from '../../context/GlobalState';
+import {Announce} from '../atoms/Announce';
 
 
 export const LongList = () => {
@@ -12,8 +9,8 @@ export const LongList = () => {
     return (
         <>
             <h3>History</h3>
-            <div className="form-control">
-                <ul className="list">
+            <div className='form-control'>
+                <ul className='list'>
                     {announces.map(announce => (
                         <Announce key={announce.id} announce={announce}/>))}
                 </ul>
