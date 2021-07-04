@@ -1,13 +1,12 @@
 import React from 'react';
-import {TemplateClassicPage} from '../templates/TemplateClassicPage';
 import {AddForm} from '../organism/AddForm';
+import {PageTitle} from "../atoms/PageTitle";
 
 export const AddNewAnnouncement = () => {
     return (
-        <div>
-            <TemplateClassicPage/>
-            AddNewAnnouncementPage
-                <AddForm/>
-        </div>
+        <>
+            <PageTitle>Add new announcement</PageTitle>
+            <AddForm/>
+        </>
     )
 }

@@ -6,8 +6,8 @@ import {WatchAllBtn} from '../molecules/WatchAllBtn';
 export const RecentUpload = () => {
     return (
         <div>
-            <ShortList/>
-            <WatchAllBtn/>
+            {/*<ShortList/>
+            <WatchAllBtn/>*/}
         </div>
     )
 }

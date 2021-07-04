@@ -1,11 +1,13 @@
 import React from 'react'
-import {TemplateClassicPage} from '../templates/TemplateClassicPage';
+import {SearchedAnnounces} from "../organism/SearchedAnnounces";
+import {Search} from "../molecules/Search";
 
 
 export const ResOfSearch = () => {
     return(
         <div>
-            <TemplateClassicPage/>
+            <Search/>
+            <SearchedAnnounces/>
         </div>
     )
 }

@@ -54,17 +54,17 @@ export const EditForm = () => {
             <form onSubmit={onSubmit}>
                 <div className='form-control'>
                     <label htmlFor='title'
-                    >Theme</label>
-                    <input type='text' value={title} onChange={(e) => setTitle(e.target.value)}
-                           placeholder='Enter title...'/>
+                    >Title</label>
+                    <input type='title' value={title} onChange={(e) => setTitle(e.target.value)}
+                           placeholder=' '/>
                 </div>
 
                 <div className='form-control'>
                     <label htmlFor='text'>Text</label>
                     <input type='text' value={text} onChange={(e) => setText(e.target.value)}
-                           placeholder='Enter text...'/>
+                           placeholder=' '/>
                 </div>
-                <button className='btn'>Add transaction</button>
+                <button className='btn'>Edit announce</button>
 
             </form>
             <Link to={'/'}>

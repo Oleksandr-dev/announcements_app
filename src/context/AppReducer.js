@@ -21,6 +21,25 @@ export default (state, action) => {
                 return announce
                 })
             }
+        case 'SEARCH':
+            return {
+                ...state,
+                searchResult: state.announces.filter(announce => {
+                    announce.title.includes(action.payload)
+
+
+
+                    /*let splitedTitle = announce.title.split(' '),
+                        splitedSearch = action.payload.split(' ')
+                    if(true === action.payload.id){
+                    announce.title = action.payload.title
+                    announce.text = action.payload.text
+                    announce.date = action.payload.date
+                }
+                    return announce*/
+                })
+            }
+
         default:
             return state;
     }

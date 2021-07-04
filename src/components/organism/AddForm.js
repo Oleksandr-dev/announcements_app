@@ -79,7 +79,6 @@ export const AddForm = () => {
                 <Placeholder htmlFor='title'>Title</Placeholder>
                 <InpSt type='title' value={title} onChange={(e) => setTitle(e.target.value)}
                        placeholder=' ' />
-                <Cut className='cut'></Cut>
             </InpCtSt>
 
             <InpCtSt className='form-control'>
@@ -87,7 +86,7 @@ export const AddForm = () => {
                 <InpSt type='text' value={text} onChange={(e) => setText(e.target.value)}
                        placeholder=' ' />
             </InpCtSt>
-                <button className='btn'>Add transaction</button>
+                <button type="submit" className='btn'>Add announce</button>
             </AddNewAnSt>
             <Link to={'/'}>
                 <button>back</button>

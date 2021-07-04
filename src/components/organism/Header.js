@@ -1,30 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Logo} from '../atoms/Logo';
 
 const Menu = styled.div`
-  grid-area: h;
-  background-color: green;
+  display: flex;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: ${({theme}) => theme.$darkpurple};
 `
 
 
 export const Header = () => {
     return(
         <Menu>
-            <div>
-                <div>
-                    <img src={'https://www.cleanpng.com/png-logo-portable-network-graphics-brand-image-owl-ann-6703441/preview.html'} width='60' height='60px'/>
-                    logo
-                </div>
-                <div>
-                    Search
-                </div>
-                <div>
-                    other
-                </div>
-
-            </div>
-
+            <Logo />
         </Menu>
-
     )
 }

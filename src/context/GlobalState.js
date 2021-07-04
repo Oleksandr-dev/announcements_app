@@ -5,7 +5,8 @@ import AppReducer from './AppReducer';
 const initialState = {
     announces: [
         {id:'1', title: 'test task', text: 'this is test task', date: 1625235894394}
-    ]
+    ],
+    searchResult: []
 }
 
 // Create context
@@ -36,10 +37,20 @@ export const GlobalProvider = ({ children }) => {
         });
 
     }
+    function searchAnnounces(search){
+        dispatch({
+            type: 'SEARCH',
+            payload: search
+        })
+    }
+
+
 
     return (<GlobalContext.Provider value={{
         announces: state.announces,
+        searchResult: state.searchResult,
         deleteAnnounce,
+        searchAnnounces,
         addAnnounce,
         editAnnounce
     }}>

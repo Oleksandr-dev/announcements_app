@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import {SearchedAnnounces} from "./SearchedAnnounces";
+import {Search} from "../molecules/Search";
 
 
 const Navb = styled.div`
@@ -17,7 +19,8 @@ export const Navbar = () => {
                     Navbar
                 </div>
                 <div>
-                    Search
+                    <Search/>
+                    <SearchedAnnounces/>
                 </div>
                 <div>
                     other
