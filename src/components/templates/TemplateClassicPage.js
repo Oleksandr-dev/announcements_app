@@ -1,10 +1,20 @@
 import React from "react"
+import {Header} from "../organism/Header";
+import {Search} from "../organism/Search";
+import {Navbar} from "../organism/Navbar";
 
 
-export const TemplateCla = () => {
+export const TemplateClassicPage = () => {
     return(
         <div>
-            ResOfSearch
+            <Header/>
+            <Navbar/>
+            <Search/>
+            <div>
+                template
+            </div>
+
+
         </div>
     )
 }
