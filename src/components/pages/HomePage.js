@@ -1,15 +1,23 @@
-import React from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {AnnounceList} from "../molecules/AnnounceList";
-import {Navbar} from "../organism/Navbar";
-import {ResOfSearch} from "./ResaultOfSearch";
-import {Route} from "react-router-dom";
+import {Search} from "../molecules/Search";
+import {GlobalContext} from "../../context/GlobalState";
 
 export const MainPage = () => {
+    const {searchString, searchResult} = useContext(GlobalContext)
+    const [searchedAnnouncements, setSearchedAnnouncements] = useState([]);
+    useEffect(() => {
+        if(searchString === ''){
+            setSearchedAnnouncements([])
+            return;
+        }
+        setSearchedAnnouncements(searchResult)
+    }, [searchString])
+
     return(
-        <div>
-            <Navbar/>
-            {/*<Route path='/resOfSearch' component={() => <ResOfSearch/>}/>*/}
-            <AnnounceList/>
-        </div>
+        <>
+            <Search/>
+            <AnnounceList searchedAnnouncements={searchedAnnouncements}/>
+        </>
     )
 }

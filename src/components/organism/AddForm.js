@@ -2,120 +2,79 @@ import React, {useContext, useState} from 'react'
 import {GlobalContext} from '../../context/GlobalState';
 import {uuid} from 'uuidv4';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import {Button} from "../atoms/Button";
+import {useHistory} from "react-router-dom";
+import {Input} from "../atoms/Input";
+import {Textarea} from "../atoms/Textarea";
+import {ButtonBox} from "../atoms/ButtonBox";
 
-const AddNewAnSt = styled.form`
-  background-color: #15172b;
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 500px;
-  padding: 20px;
-  width: 320px;
-  /*background: url(http://www.timurtek.com/wp-content/uploads/2014/10/form-bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family:'HelveticaNeue','Arial', sans-serif;*/
-  /*align-items: center;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  height: 100vh;*/
-
-`
-const InpCtSt = styled.div`
+const StyledForm = styled.form`
+  height: 100%;
+  padding: 15px;
+  background-color: ${({theme}) => theme.$darkslategray};
+  border-radius: 6px;
   
-    height: 50px;
-    position: relative;
-    width: 100%;
-  `
-
-const InpSt = styled.input`
-    background-color: #303245;
-    border-radius: 12px;
-    border: 0;
-    box-sizing: border-box;
-    color: #eee;
-    font-size: 18px;
-    height: 100%;
-    outline: 0;
-    padding: 4px 20px 0;
-    width: 100%;
+  & > :not(:last-child) {
+    margin-bottom: 20px;
+  }
 `
-
 
 export const AddForm = () => {
+    const history = useHistory();
     const [title, setTitle] = useState('');
     const [text, setText] = useState('');
-    /*const [date, setDate] = useState(0);*/
-
-
     const {addAnnounce} = useContext(GlobalContext);
 
-    const onSubmit = e => {
+    const onCancelClick = () => {
+        history.push("/")
+    }
+
+    const onSubmit = (e) => {
         e.preventDefault();
-        let date = Date.now()
-        //let id = uuid()
+        const date = Date.now()
 
         const newAnnouncement = {
-            id: uuid()/*Math.floor(Math.random() * 100000000)*/,
-            title: title,
-            text: text,
-            date: date,
-
+            id: uuid(),
+            title,
+            text,
+            date,
         }
 
         addAnnounce(newAnnouncement);
         setTitle('');
         setText('');
-        /*setDate('');*/
+
+        history.push("/");
     }
 
     return (
-        <div>
-            <AddNewAnSt onSubmit={onSubmit}>
-            <InpCtSt className='form-control'>
-                <Placeholder htmlFor='title'>Title</Placeholder>
-                <InpSt type='title' value={title} onChange={(e) => setTitle(e.target.value)}
-                       placeholder=' ' />
-            </InpCtSt>
-
-            <InpCtSt className='form-control'>
-                <Placeholder htmlFor='text'>Text</Placeholder>
-                <InpSt type='text' value={text} onChange={(e) => setText(e.target.value)}
-                       placeholder=' ' />
-            </InpCtSt>
-                <button type="submit" className='btn'>Add announce</button>
-            </AddNewAnSt>
-            <Link to={'/'}>
-                <button>back</button>
-            </Link>
-        </div>
+        <StyledForm onSubmit={onSubmit}>
+            <Input
+                type="title"
+                id="title"
+                name="title"
+                maxlength="30"
+                required
+                value={title}
+                placeholder="Title"
+                onChange={(e) => setTitle(e.target.value)}
+            />
+            <Textarea
+                type="text"
+                id="text"
+                name="text"
+                maxlength="500"
+                rows={8}
+                required
+                value={text}
+                placeholder="Description"
+                onChange={(e) => setText(e.target.value)}
+            />
+            <ButtonBox>
+                <Button type="submit" onClick={onSubmit}>Add</Button>
+                <Button type="reset" redColor onClick={onCancelClick}>Cancel</Button>
+            </ButtonBox>
+        </StyledForm>
 
     )
 }
-
-const Cut = styled.div`
-  background-color: #15172b;
-  border-radius: 10px;
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  top: -20px;
-  transform: translateY(0);
-  transition: transform 200ms;
-  width: 76px;`
-
-
- const Placeholder  = styled.label`
-    color: #65657b;
-    font-family: sans-serif;
-    left: 20px;
-    line-height: 14px;
-    pointer-events: none;
-    position: absolute;
-    transform-origin: 0 50%;
-    transition: transform 200ms, color 200ms;
-    top: 20px;
-`

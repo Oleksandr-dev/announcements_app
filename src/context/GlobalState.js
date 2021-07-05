@@ -1,22 +1,24 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
-// Initial state
+
 const initialState = {
     announces: [
-        {id:'1', title: 'test task', text: 'this is test task', date: 1625235894394}
+        {id:1, title: 'test task', text: 'this is test task', date: 1625235894394},
+        {id:2, title: 'test', text: 'task', date: 1625236895394},
+        {id:3, title: 'task', text: 'test', date: 1625237896394},
     ],
+    searchString: '',
     searchResult: []
 }
 
-// Create context
+
 export const GlobalContext = createContext(initialState);
 
-// Provider component
+
 export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
-    // Actions
     function deleteAnnounce(id) {
         dispatch({
             type: 'DELETE_ANNOUNCE',
@@ -43,14 +45,21 @@ export const GlobalProvider = ({ children }) => {
             payload: search
         })
     }
+    function cleanSearchResult(){
+        dispatch({
+            type: 'CLEAR_SEARCH'
+        })
+    }
 
 
 
     return (<GlobalContext.Provider value={{
         announces: state.announces,
         searchResult: state.searchResult,
+        searchString: state.searchString,
         deleteAnnounce,
         searchAnnounces,
+        cleanSearchResult,
         addAnnounce,
         editAnnounce
     }}>

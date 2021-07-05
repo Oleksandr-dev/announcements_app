@@ -24,20 +24,16 @@ export default (state, action) => {
         case 'SEARCH':
             return {
                 ...state,
+                searchString: action.payload,
                 searchResult: state.announces.filter(announce => {
-                    announce.title.includes(action.payload)
-
-
-
-                    /*let splitedTitle = announce.title.split(' '),
-                        splitedSearch = action.payload.split(' ')
-                    if(true === action.payload.id){
-                    announce.title = action.payload.title
-                    announce.text = action.payload.text
-                    announce.date = action.payload.date
-                }
-                    return announce*/
+                    return announce.title.toLowerCase().includes(action.payload.toLowerCase())
                 })
+            }
+        case 'CLEAR_SEARCH':
+            return {
+                ...state,
+                searchString: '',
+                searchResult: []
             }
 
         default:

@@ -4,7 +4,6 @@ import {GlobalProvider} from './context/GlobalState';
 import {MainPage} from './components/pages/HomePage';
 import {AddNewAnnouncement} from './components/pages/AddNewAnnouncement';
 import {EditAnnounce} from './components/pages/EditAnnounce';
-import {ResOfSearch} from './components/pages/ResaultOfSearch';
 import styled, {ThemeProvider} from 'styled-components';
 import {theme} from './styles/theme';
 import {GlobalStyles} from './styles/GlobalStyles';
@@ -35,7 +34,6 @@ function App() {
                             <Route path='/' exact component={() => <MainPage/>}/>
                             <Route path='/newAnnouncement' component={() => <AddNewAnnouncement/>}/>
                             <Route path='/editAnnouncement/:id' component={() => <EditAnnounce/>}/>
-                            <Route path='/resOfSearch' component={() => <ResOfSearch/>}/>
                         </Switch>
                     </Wrapper>
                 </BrowserRouter>

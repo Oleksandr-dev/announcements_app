@@ -1,47 +1,77 @@
-import React, {useState, useContext} from 'react'
-import styled from 'styled-components';
-import {Link} from "react-router-dom";
+import React, {useContext, useState} from 'react'
+import {useHistory} from "react-router-dom";
 import {GlobalContext} from "../../context/GlobalState";
+import {StyledButtonBox} from "../atoms/ButtonBox";
+import {Button, StyledButton} from "../atoms/Button";
+import styled from "styled-components";
+import {Input, StyledInput} from "../atoms/Input";
 
-/*const Searchb = styled.div`
-  display: block;
-  text-align: left;
+
+const SearchBar = styled.div`
+  position: relative;
+  //margin-bottom: 20px;
+  justify-content: space-between;
+`
+
+const SearchB = styled.div`
+  position: relative;
   width: 100%;
-  color: rgb(66, 66, 66);
-  font-size: 2.33333rem;
-  font-weight: bold;
-  font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  display: flex;
+  justify-content: space-between;
+`
+const AddBtn = styled(StyledButtonBox)`
+  justify-content: flex-start;
+  //padding-left: 20px;
+`
 
-`*/
+const ButtonClear = styled(StyledButton)`
+  margin-left: 15px;
+  //padding-right: 20px;
+`
+
+const SearchStyle = styled(StyledInput)`
+  width: 50%;
+`
 
 export const Search = () => {
     const [search, setSearch] = useState('')
+    const {searchAnnounces, cleanSearchResult} = useContext(GlobalContext)
+    const history = useHistory()
 
-    const {searchAnnounces} = useContext(GlobalContext)
-
+    const addAnnounce = () => {
+        history.push(`/newAnnouncement`)
+    }
 
     const onSearchChange = ({target}) => {
-        if(target){
-            setSearch(target.value)
-            console.log(target.value)
-
-            searchAnnounces(target.value)
-
+        const {value} = target
+        setSearch(value)
+        if (!value) {
+            cleanSearchResult()
+            return
         }
-
-
+        searchAnnounces(value)
     }
 
     const clearSearch = () => {
         setSearch('')
+        cleanSearchResult()
     }
 
     return (
-        <div>
-            <div>
-            <input type="search" value={search} onChange={onSearchChange} />
-            </div>
-            <button onClick={clearSearch}>Clear</button>
-        </div>
+        <SearchBar>
+            <AddBtn>
+                {/*<ButtonBox>*/}
+                <Button onClick={() => addAnnounce()}>+ New message</Button>
+                {/*</ButtonBox>*/}
+                <SearchB>
+                    {/*<SearchStyle>*/}
+                    <Input type="search" value={search} onChange={onSearchChange}/>
+                    {/*</SearchStyle>*/}
+                    <ButtonClear onClick={clearSearch}>Clear</ButtonClear>
+                </SearchB>
+            </AddBtn>
+
+
+        </SearchBar>
     )
 }

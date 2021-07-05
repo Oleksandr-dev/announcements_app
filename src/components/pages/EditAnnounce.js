@@ -1,12 +1,13 @@
 import React from 'react'
 import {EditForm} from '../organism/EditForm';
+import {PageTitle} from "../atoms/PageTitle";
 
 
 export const EditAnnounce = () => {
     return(
-        <div>
+        <>
+            <PageTitle>Edit announcement</PageTitle>
             <EditForm/>
-            EditAnnounce
-        </div>
+        </>
     )
 }

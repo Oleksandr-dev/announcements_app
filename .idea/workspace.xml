@@ -2,35 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f811e6d-ce0e-4d05-8307-f401742f2e29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/header-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/arrow-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/PageTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/AnnounceList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/SearchedAnnounces.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/GlobalStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/ButtonBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/Textarea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/Wrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/searchHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Announce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Announce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/LongList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/arrow-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Announce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Announce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/AnnounceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/AnnounceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/ShortList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/WatchAllBtn.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/AddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/AddForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/EditForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/EditForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/RecentUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/RecentUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/Search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/AddNewAnnouncement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/AddNewAnnouncement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/AllAnnouncement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/RecentUpload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/SearchedAnnounces.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/EditAnnounce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/EditAnnounce.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResaultOfSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResaultOfSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/templates/TemplateClassicPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResaultOfSearch.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/AppReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AppReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/GlobalState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/GlobalState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +55,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/atoms" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -76,8 +77,8 @@
       <recent name="D:\Projects\WebstormProjects\test\src\components\molecules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\WebstormProjects\test\src\components\organism" />
       <recent name="D:\Projects\WebstormProjects\test\src\components\molecules" />
+      <recent name="D:\Projects\WebstormProjects\test\src\components\organism" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -108,7 +109,7 @@
       <workItem from="1625199683509" duration="27068000" />
       <workItem from="1625282632546" duration="43136000" />
       <workItem from="1625417041879" duration="343000" />
-      <workItem from="1625417848664" duration="4057000" />
+      <workItem from="1625417848664" duration="41728000" />
     </task>
     <servers />
   </component>

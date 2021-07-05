@@ -9,6 +9,10 @@ const Menu = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: ${({theme}) => theme.$darkpurple};
+
+  @media (max-width:445px) {
+    padding: 5px 10px;
+  }
 `
 
 
